@@ -17,6 +17,7 @@
   --portfolio-button-bg-color--: #f5f4fa;
   --icon-bg-color--: #f5f4fa;
   --border-color--: #eeeeee;
+  --logo-border-color--: #afb1b8;
   --button-text-color--: #ffffff;
 }
 body {
@@ -55,7 +56,8 @@ img {
   margin: -1px;
 }
 .opportunities-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -188,7 +190,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/icons.svg/img_fon.jpg);
+    url(../images/img_fon.jpg);
 }
 .hero-title {
   max-width: 696px;
@@ -236,27 +238,13 @@ img {
 .features-item {
   width: 270px;
 }
-.features-item::before {
-  display: block;
-  content: "";
-  height: 120px;
+.features-item-icon {
+  padding: 25px 100px;
   margin-bottom: 30px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
   background-color: var(--icon-bg-color--);
-}
-.features-item-antenna::before {
-  background-image: url(../images/icons.svg/antenna.svg);
-}
-.features-item-clock::before {
-  background-image: url(../images/icons.svg/clock.svg);
-}
-.features-item-diagram::before {
-  background-image: url(../images/icons.svg/diagram.svg);
-}
-.features-item-astronaut::before {
-  background-image: url(../images/icons.svg/astronaut.svg);
 }
 .features-title {
   margin-top: 0;
@@ -317,6 +305,68 @@ img {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
+}
+.socials-list {
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+  margin-right: 32px;
+  margin-bottom: 0px;
+  margin-left: 32px;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: inline-flex;
+  padding: 12px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color--);
+  color: var(--primary-whiter-color--);
+}
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--primary-whiter-color--);
+  background-color: var(--accent-color--);
+}
+/* Постоянные клиенты*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--logo-border-color--);
+  border-radius: 4px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-logo {
+  display: inline-flex;
+
+  width: 106px;
+  height: 60px;
 }
 
 /*Подвал*/
