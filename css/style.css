@@ -169,6 +169,15 @@ img {
 .phone:focus {
   color: var(--accent-color--);
 }
+.email-icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.email-icon:hover,
+.email-icon:focus {
+  fill: currentColor;
+}
 
 /* Герой */
 .hero {
@@ -317,26 +326,20 @@ img {
 .socials-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
-  display: inline-flex;
-  padding: 12px;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color--);
-  color: var(--primary-whiter-color--);
-}
+
 .social-icon {
   fill: #afb1b8;
+  padding: 12px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .social-icon:hover,
 .social-icon:focus {
-  fill: var(--primary-whiter-color--);
   background-color: var(--accent-color--);
+  fill: var(--primary-whiter-color--);
 }
 /* Постоянные клиенты*/
 .clients {
@@ -350,23 +353,32 @@ img {
 .clients-list {
   display: flex;
 }
-.clients-item {
-  padding: 16px 32px;
-  width: 170px;
-  height: 92px;
-  border: 1px;
-  border-style: solid;
-  border-color: var(--logo-border-color--);
-  border-radius: 4px;
-}
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-logo {
+  display: block;
+  width: 170px;
+  height: 92px;
+}
+.clients-icon {
+  border: 1px;
+  border-style: solid;
+  border-color: var(--logo-border-color--);
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 170px;
+  height: 92px;
   display: inline-flex;
-
-  width: 106px;
-  height: 60px;
+  fill: #afb1b8;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  border-color: var(--accent-color--);
+  fill: var(--accent-color--);
 }
 
 /*Подвал*/
